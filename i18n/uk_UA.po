@@ -1,0 +1,2320 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_dynamic_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-13 10:49+0000\n"
+"PO-Revision-Date: 2023-03-13 10:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid " To "
+msgstr "До"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#, python-format
+msgid "\"Bucket order must be ascending\""
+msgstr "\"Порядок сегментів має бути за зростанням\""
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid "\"Date from\" must be less than or equal to \"Date to\""
+msgstr "\"Дата з\" має бути менше або дорівнювати \"Дата до\""
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_account_financial_report__range_selection
+msgid ""
+"\"From the beginning\" will select all the entries before and on the date "
+"range selected.\"Based on Current Date Range\" will select all the entries "
+"strictly on the date range selected\"Based on Initial Date Range\" will "
+"select only the initial balance for the selected date range"
+msgstr ""
+"\"З початку\" вибере всі записи до та на дату "
+"вибрано діапазон. \"На основі поточного діапазону дат\" вибере всі записи "
+"строго за вибраним діапазоном дат \"На основі початкового діапазону дат\" буде "
+"вибрати лише початковий баланс для вибраного діапазону дат"
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "&nbsp;"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "*** END OF DOCUMENT ***"
+msgstr "*** КІНЕЦЬ ДОКУМЕНТА ***"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__financial_year__april_march
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__financial_year__april_march
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__financial_year__april_march
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__financial_year__april_march
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__financial_year__april_march
+msgid "1 April to 31 March"
+msgstr "1 квітня по 31 березня"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__financial_year__january_december
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__financial_year__january_december
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__financial_year__january_december
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__financial_year__january_december
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__financial_year__january_december
+msgid "1 Jan to 31 Dec"
+msgstr "1 січня до 31 грудня"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__financial_year__july_june
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__financial_year__july_june
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__financial_year__july_june
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__financial_year__july_june
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__financial_year__july_june
+msgid "1 july to 30 June"
+msgstr "1 липня по 30 червня"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+msgid ": General ledger"
+msgstr ": Головна книга"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid ": Partner Ageing"
+msgstr ": Старіння партнера"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid ": Partner ledger"
+msgstr ": Партнерська книга"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid ": Trial Balance"
+msgstr ": Пробний баланс"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid ""
+"<span>&amp;nbsp;</span>\n"
+"                                                <span>&amp;nbsp;</span>\n"
+"                                                <span>&amp;nbsp;</span>"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<span>Ending Balance</span>"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<span>Initial Balance</span>"
+msgstr "<span>Кінцевий баланс</span>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<span>Total</span>"
+msgstr "<span>Усього</span>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Accounts:</strong>"
+msgstr "<strong>Облікові записи:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+msgid "<strong>Analytic Tag:</strong>"
+msgstr "<strong>Аналітичний тег:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Analytic:</strong>"
+msgstr "<strong>Аналітика:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<strong>As on Date:</strong>"
+msgstr "<strong>Станом на дату:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "<strong>Comparison Date From:</strong>"
+msgstr "<strong>Дата порівняння з:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "<strong>Comparison Date To:</strong>"
+msgstr "<strong>Дата порівняння з:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Date From:</strong>"
+msgstr "<strong>Дата з:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Date To:</strong>"
+msgstr "<strong>Дата до:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Display Account</strong>"
+msgstr "<strong>Відображати обліковий запис</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Journals:</strong>"
+msgstr "<strong>Щоденники:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Partner Tags:</strong>"
+msgstr "<strong>Теги партнера:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<strong>Partners:</strong>"
+msgstr "<strong>Партнери:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Reconciled:</strong>"
+msgstr "<strong>Звірено:</strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Target Moves:</strong>"
+msgstr "<strong>Цільові рухи:</strong>"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_assets0
+msgid "ASSETS"
+msgstr "АКТИВИ"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__absolute_summary
+msgid "Absolute Sum Balance?"
+msgstr "Абсолютна сума балансу?"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model:ir.model,name:account_dynamic_reports.model_account_account
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#, python-format
+msgid "Account"
+msgstr "Рахунок"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_account_financial_report
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__children_ids
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_form
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_tree
+msgid "Account Report"
+msgstr "Звіт про рахунок"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__account_report_id
+msgid "Account Reports"
+msgstr "Звіти про облікові записи"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__account_tag_ids
+#, python-format
+msgid "Account Tags"
+msgstr "Теги облікового запису"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Account Tags:"
+msgstr "Теги облікового запису:"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__type
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__type__account_type
+msgid "Account Type"
+msgstr "Тип рахунку"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Account Type:"
+msgstr "Тип рахунку:"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__account_type_ids
+msgid "Account Types"
+msgstr "Типи облікових записів"
+
+#. module: account_dynamic_reports
+#: model:ir.ui.menu,name:account_dynamic_reports.account_reports_ins_wiz
+msgid "Accounting Reports"
+msgstr "Бухгалтерські звіти"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__account_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__account_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__account_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__account_ids
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__type__accounts
+#, python-format
+msgid "Accounts"
+msgstr "Облікові записи"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Accounts:"
+msgstr "Облікові записи:"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_res_company_form
+msgid "Ageing Bucket"
+msgstr "Віковий кошик"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__display_accounts__all
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__display_accounts__all
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__display_accounts__all
+msgid "All"
+msgstr "Все"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__target_move__all
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "All Entries"
+msgstr "Усі записи"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__target_move__posted
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "All Posted Entries"
+msgstr "Усі опубліковані записи"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__target_moves__all_entries
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__target_moves__all_entries
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__target_moves__all_entries
+msgid "All entries"
+msgstr "Всі записи"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__analytic_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__analytic_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__analytic_ids
+#, python-format
+msgid "Analytic Accounts"
+msgstr "Аналітичні рахунки"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__analytic_tag_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__analytic_tag_ids
+#, python-format
+msgid "Analytic Tags"
+msgstr "Аналітичні теги"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Analytic Tags:"
+msgstr "Аналітичні теги:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Analytic:"
+msgstr "Аналітичний:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Apply"
+msgstr "Застосувати"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#, python-format
+msgid "As on Date"
+msgstr "На дату"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "As on Date :"
+msgstr "На дату :"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__as_on_date
+msgid "As on date"
+msgstr "На дату"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__0
+msgid "Automatic formatting"
+msgstr "Автоматичне форматування"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_balancesheet0
+msgid "BALANCE SHEET"
+msgstr "Баланс (фінансовий звіт)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Balance"
+msgstr "Баланс"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_balance_sheet_report
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_bs_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_bl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_bs_wiz
+msgid "Balance Sheet"
+msgstr "Баланс (фінансовий звіт)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Balance in FC"
+msgstr "Баланс в валюті"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__range_selection__current_date_range
+msgid "Based on Current Date Range"
+msgstr "На основі поточного діапазону дат"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__range_selection__initial_date_range
+msgid "Based on Initial Date Range"
+msgstr "На основі початкового діапазону дат"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__bucket_1
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__bucket_1
+msgid "Bucket 1"
+msgstr "Кошик 1"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__bucket_2
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__bucket_2
+msgid "Bucket 2"
+msgstr "Кошик 2"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__bucket_3
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__bucket_3
+msgid "Bucket 3"
+msgstr "Кошик 3"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__bucket_4
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__bucket_4
+msgid "Bucket 4"
+msgstr "Кошик 4"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__bucket_5
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__bucket_5
+msgid "Bucket 5"
+msgstr "Кошик 5"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Bucket-1"
+msgstr "Кошик-1"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Bucket-2"
+msgstr "Кошик-2"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Bucket-3"
+msgstr "Кошик-3"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Bucket-4"
+msgstr "Кошик-4"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Bucket-5"
+msgstr "Кошик-5"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_financial_report__force_show_summary
+msgid "By default, only cash flow report have summary footer."
+msgstr "За замовчуванням, тільки звіт про готівковий потік має сумарний підвал."
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_cf_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_cf_wiz
+msgid "Cash Flow"
+msgstr "Готівковий потік"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_cash_flow_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_cashflow
+msgid "Cash Flow Report"
+msgstr "Звіт про готівковий потік"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_cash_flow0
+msgid "Cash Flow Statement"
+msgstr "Звіт про готівковий потік"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_account_account__cash_flow_category
+msgid "Cash Flow type"
+msgstr "Категорія готівкового потоку"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_in_financial_1
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_in_investing_1
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_in_operation_1
+msgid "Cash In"
+msgstr "Гроші входять"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_out_financial_2
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_out_investing_2
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_cash_out_operation_2
+msgid "Cash Out"
+msgstr "Гроші виходять"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#, python-format
+msgid "Code"
+msgstr "Код"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__label_filter
+msgid "Column Label"
+msgstr "Мітка стовпця"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_res_company
+msgid "Companies"
+msgstr "Компанії"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__company_id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__company_id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__company_id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__company_id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__company_id
+msgid "Company"
+msgstr "Компанія"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Comparison"
+msgstr "Порівняння"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "Comparison Date from"
+msgstr "Дата порівняння з"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "Comparison Date to"
+msgstr "Дата порівняння до"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_cost_of_revenue0
+msgid "Cost of Revenue"
+msgstr "Витрати на виробництво"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__create_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__create_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__create_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__create_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__create_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__create_uid
+msgid "Created by"
+msgstr "Створено користувачем"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__create_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__create_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__create_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__create_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__create_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Credit"
+msgstr "Кредит"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_res_currency
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_current_allocated_earnings0
+msgid "Current Allocated Earnings"
+msgstr "Поточні виділені прибутки"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Current Cash Balance"
+msgstr "Поточний готівковий баланс"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_current_earnings0
+msgid "Current Earnings"
+msgstr "Поточні прибутки"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_current_unallocated_earnings0
+msgid "Current Unallocated Earnings"
+msgstr "Поточні не виділені прибутки"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Custom"
+msgstr "Користувацька"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Custom Buckets"
+msgstr "Користувацькі сегменти"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__range_selection
+msgid "Custom Date Range"
+msgstr "Користувацький діапазон дат"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ageing__partner_type__customer
+msgid "Customer Only"
+msgstr "Тільки клієнти"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Customers Only"
+msgstr "Тільки клієнти"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__filter_cmp__filter_date
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__sort_accounts_by__date
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#, python-format
+msgid "Date"
+msgstr "Дата"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__date_range
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__date_range
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__date_range
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__date_range
+msgid "Date Range"
+msgstr "Діапазон дат"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Date Range:"
+msgstr "Діапазон дат:"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid "Date from"
+msgstr "Дата від"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid "Date to"
+msgstr "Дата до"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Dates"
+msgstr "Дати"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Debit"
+msgstr "Дебет"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__date_range
+msgid "Default Date Range"
+msgstr "Стандартний діапазон дат"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+msgid "Discard"
+msgstr "Відмінити"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__debit_credit
+msgid "Display Debit/Credit Columns"
+msgstr "Показати колонки Дебет/Кредит"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__display_name
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__display_name
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__display_name
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__display_name
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__display_name
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__display_name
+msgid "Display Name"
+msgstr "Показати ім'я"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__display_accounts
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__display_accounts
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__display_accounts
+#, python-format
+msgid "Display accounts"
+msgstr "Показати рахунки"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__display_detail__detail_flat
+msgid "Display children flat"
+msgstr "Показати дочірні рахунки рівним списком"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__display_detail__detail_with_hierarchy
+msgid "Display children with hierarchy"
+msgstr "Показати дітей з ієрархією"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__display_detail
+msgid "Display details"
+msgstr "Показати деталі"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#, python-format
+msgid "Due Date"
+msgstr "Дата платежу"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_res_company_form
+msgid "Dynamic Reports"
+msgstr "Динамічні звіти"
+
+#. module: account_dynamic_reports
+#: model:ir.ui.menu,name:account_dynamic_reports.account_reports_ins
+msgid "Dynamic Reports(Wiz)"
+msgstr "Динамічні звіти (Майстер)"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_equitysum0
+msgid "EQUITY"
+msgstr "ВЛАСНИЙ КАПІТАЛ"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__enable_filter
+msgid "Enable Comparison"
+msgstr "Увімкнути порівняння"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__date_to
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__date_to_cmp
+msgid "End Date"
+msgstr "Кінцева дата"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "End Date :"
+msgstr "Кінцева дата:"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__date_to
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__date_to
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__date_to
+msgid "End date"
+msgstr "Кінцева дата"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Ending Balance"
+msgstr "Кінцевий баланс"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#, python-format
+msgid "Entry #"
+msgstr "Запис №"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#, python-format
+msgid "Entry Label"
+msgstr "Мітка запису"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_general_ledger_xlsx
+msgid "Excel"
+msgstr "Ексель"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_currency__excel_format
+msgid "Excel format"
+msgstr "Формат Ексель"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_expense0
+msgid "Expense"
+msgstr "Витрати"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Export (XLSX)"
+msgstr "Експортувати (XLSX)"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__filter_cmp
+msgid "Filter by"
+msgstr "Фільтрувати за"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_ins_report_financial
+msgid "Financial Report"
+msgstr "Фінансовий звіт"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__style_overwrite
+msgid "Financial Report Style"
+msgstr "Стиль фінансового звіту"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_account_financial_report_tree
+#: model:ir.model,name:account_dynamic_reports.model_ins_financial_report
+#: model:ir.ui.menu,name:account_dynamic_reports.ins_account_financial_report
+msgid "Financial Reports"
+msgstr "Фінансові звіти"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__financial_year
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__financial_year
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__financial_year
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__financial_year
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__financial_year
+msgid "Financial Year"
+msgstr "Фінансовий рік"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.report,name:account_dynamic_reports.ins_financial_report_pdf
+msgid "Financial reports"
+msgstr "Фінансові звіти"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_financing_activity1
+msgid "Financing Activities"
+msgstr "Фінансування діяльності"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_account_financial_report__sign
+msgid ""
+"For accounts that are typically more debited than credited and that you "
+"would like to print as negative amounts in your reports, you should reverse "
+"the sign of the balance; e.g.: Expense account. The same applies for "
+"accounts that are typically more credited than debited and that you would "
+"like to print as positive amounts in your reports; e.g.: Income account."
+msgstr ""
+"Для рахунків, які зазвичай дебетуються більше, ніж кредитуються, і які ви хочете "
+"друкувати як від'ємні суми в звітах, ви повинні змінити знак балансу; наприклад: рахунок витрат. Те ж саме стосується "
+"рахунків, які зазвичай кредитуються більше, ніж дебетуються, і які ви хочете "
+"друкувати як позитивні суми в звітах; наприклад: рахунок доходів."
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__force_show_summary
+msgid "Force Show Summary"
+msgstr "Показати зведений звіт"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__view_format
+msgid "Format"
+msgstr "Формат"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "From date and To date are mandatory to generate this report"
+msgstr "Для створення цього звіту обов'язково вказати початкову та кінцеву дати"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid "From date and To dates are mandatory for this report"
+msgstr "Для цього звіту обов'язкові дати від та до"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "From date is mandatory to generate this report"
+msgstr "Дата 'Від' є обов'язковою для генерації цього звіту"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#, python-format
+msgid "From date must not be less than to date"
+msgstr "Дата 'Від' не може бути меншою за дату 'До'"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__range_selection__from_the_beginning
+msgid "From the Beginning"
+msgstr "З початку"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_general_ledger_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_general_ledger
+#: model:ir.actions.report,name:account_dynamic_reports.ins_general_ledger_xlsx
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_gl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_gl_wiz
+#, python-format
+msgid "General Ledger"
+msgstr "Головна книга"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_gl_report
+msgid "General Ledger Report"
+msgstr "Звіт головної книги"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_gross_profit0
+msgid "Gross Profit"
+msgstr "Валовий прибуток"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Group By"
+msgstr "Групувати по"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Group By Analytic"
+msgstr "Групувати за аналітикою"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__analytic_group
+msgid "Grouping by Analytics"
+msgstr "Групування за аналітикою"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_financial_report__analytic_group
+msgid "Help to grouping the report by analytic account."
+msgstr "Допомагає групувати звіт за аналітичним рахунком."
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_financial_report__debit_credit
+msgid ""
+"Help to identify debit and credit with balance line for better "
+"understanding."
+msgstr ""
+"Допомагає визначити дебет та кредит з балансовим рядком для кращого "
+"розуміння."
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_financial_report__absolute_summary
+msgid "Helps to display summary footer with absolute amounts."
+msgstr "Допомагає відображати загальний підсумок з абсолютними сумами."
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__view_format__horizontal
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__id
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__id
+msgid "ID"
+msgstr "Ідентифікатор"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid ""
+"If checked the accounts will act strict to the date range"
+"                                     else it will consider initial balance "
+"to account"
+msgstr ""
+"Якщо відзначено, рахунки будуть діяти строго в межах діапазону дат, "
+"в іншому випадку буде враховано початковий баланс рахунку"
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__include_details
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__include_details
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__include_details
+#, python-format
+msgid "Include Details"
+msgstr "Включити деталі"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__initial_balance
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__initial_balance
+msgid "Include Initial Balance"
+msgstr "Включити початковий баланс"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_income0
+msgid "Income"
+msgstr "Дохід"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Initial Balance"
+msgstr "Початковий баланс"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Initial Cash Balance"
+msgstr "Початковий баланс готівки"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_investing_activity0
+msgid "Investing Activities"
+msgstr "Інвестиційна діяльність"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+msgid "It will show detailed lines in reports"
+msgstr "Показує детальні лінії в звітах"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__5
+msgid "Italic Text (smaller)"
+msgstr "Курсив (менший)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#, python-format
+msgid "JRNL"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#, python-format
+msgid "Journal"
+msgstr "Журнал"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__sort_accounts_by__journal
+msgid "Journal and Partner"
+msgstr "Журнал та контрагент"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__journal_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__journal_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__journal_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__journal_ids
+#, python-format
+msgid "Journals"
+msgstr "Журнали"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Journals:"
+msgstr "Журнали:"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_liabilitysum0
+msgid "LIABILITIES"
+msgstr "ЗОБОВ'ЯЗАННЯ"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__last_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__last_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__last_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__last_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__last_financial_year
+msgid "Last Financial Year"
+msgstr "Останній фінансовий рік"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report____last_update
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report____last_update
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger____last_update
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing____last_update
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger____last_update
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance____last_update
+msgid "Last Modified on"
+msgstr "Востаннє змінено"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__last_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__last_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__last_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__last_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__last_month
+#, python-format
+msgid "Last Month"
+msgstr "Минулого місяця"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__last_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__last_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__last_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__last_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__last_quarter
+#, python-format
+msgid "Last Quarter"
+msgstr "Останній квартал"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__write_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__write_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__write_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__write_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__write_uid
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновлено"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__write_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__write_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__write_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__write_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__write_date
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__write_date
+msgid "Last Updated on"
+msgstr "Востаннє оновлено"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__last_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__last_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__last_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__last_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__last_week
+#, python-format
+msgid "Last Week"
+msgstr "Минулого тижня"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Last Year"
+msgstr "Минулого року"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__level
+msgid "Level"
+msgstr "Рівень"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_liability0
+msgid "Liability"
+msgstr "Відповідальність"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__1
+msgid "Main Title 1 (bold, underlined)"
+msgstr "Основний заголовок 1 (жирний, підкреслений)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#, python-format
+msgid "Move"
+msgstr "Перемістити"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "Name"
+msgstr "Ім'я"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Net Cash Balance"
+msgstr "Чистий баланс готівки"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__filter_cmp__filter_no
+msgid "No Filters"
+msgstr "Без фільтрів"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__display_detail__no_detail
+msgid "No detail"
+msgstr "Без деталей"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__4
+msgid "Normal Text"
+msgstr "Звичайний текст"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_operating_income0
+msgid "Operating Income"
+msgstr "Операційний дохід"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_operation0
+msgid "Operations"
+msgstr "Операції"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Options:"
+msgstr "Опції:"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_other_income0
+msgid "Other Income"
+msgstr "Інші прибутки"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "PDF"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__parent_id
+msgid "Parent"
+msgstr "Батько"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Parent Report"
+msgstr "Батьківський звіт"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__partner_ids
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#, python-format
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_partner_ageing_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_partner_ageing
+#: model:ir.actions.report,name:account_dynamic_reports.ins_financial_report_xlsx
+#: model:ir.actions.report,name:account_dynamic_reports.ins_partner_ageing_xlsx
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pa
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pa_wiz
+#, python-format
+msgid "Partner Ageing"
+msgstr "Старіння партнера"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_pa_report
+msgid "Partner Ageing Report"
+msgstr "Звіт про старіння партнера"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_partner_ledger_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_partner_ledger
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_plg
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_plg_wiz
+#, python-format
+msgid "Partner Ledger"
+msgstr "Партнерська книга"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_plg_report
+msgid "Partner Ledger Report"
+msgstr "Звіт про партнерську книгу"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__partner_category_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__partner_category_ids
+#, python-format
+msgid "Partner Tag"
+msgstr "Тег партнера"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Partner Tag:"
+msgstr "Тег партнера:"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__partner_type
+msgid "Partner Type"
+msgstr "Тип партнера"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Partner Type:"
+msgstr "Тип партнера:"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__partner_ids
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__partner_ids
+#, python-format
+msgid "Partners"
+msgstr "Партнери"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Partners:"
+msgstr "Партнери:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ageing__type__payable
+#, python-format
+msgid "Payable Accounts Only"
+msgstr "Лише кредиторська заборгованість"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__type__payable
+msgid "Payable only"
+msgstr "Тільки платні"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "Please choose \"Custom Date Range\" for the report head %s"
+msgstr "Виберіть \"Користувацький діапазон дат\" для заголовка звіту %s"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__target_moves__posted_only
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__target_moves__posted_only
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__target_moves__posted_only
+msgid "Posted Only"
+msgstr "Лише опубліковано"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__sign__1
+msgid "Preserve balance sign"
+msgstr "Зберегти баланс знак"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_previous_unallocated_earnings0
+msgid "Previous Unallocated Earnings"
+msgstr "Попередні нерозподілені прибутки"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Print (Pdf)"
+msgstr "Роздрукувати (Pdf)"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_profitandloss0
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_profit_and_loss_report
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_pl_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pandl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pl_wiz
+msgid "Profit and Loss"
+msgstr "Прибуток і збиток"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ageing__type__receivable
+#, python-format
+msgid "Receivable Accounts Only"
+msgstr "Лише дебіторська заборгованість"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__type__receivable
+msgid "Receivable Only"
+msgstr "Лише дебіторська заборгованість"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__reconciled
+msgid "Reconcile Type"
+msgstr "Тип узгодження"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#, python-format
+msgid "Reconciled"
+msgstr "Урегулювати"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__reconciled__reconciled
+msgid "Reconciled Only"
+msgstr "Тільки урегулювати"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Reconciled:"
+msgstr "Урегулювати:"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "Reference"
+msgstr "Довідка"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_form
+msgid "Report"
+msgstr "Звіт"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__name
+msgid "Report Name"
+msgstr "Назва звіту"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Report Type"
+msgstr "Тип звіту"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__account_report_id
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__type__account_report
+msgid "Report Value"
+msgstr "Значення звіту"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_retained_earnings0
+msgid "Retained Earnings"
+msgstr "Нерозподілений прибуток"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__sign__-1
+msgid "Reverse balance sign"
+msgstr "Знак зворотного балансу"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__sequence
+msgid "Sequence"
+msgstr "Послідовність"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Show Debit Credit"
+msgstr "Показати дебетовий кредит"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__show_hierarchy
+#, python-format
+msgid "Show hierarchy"
+msgstr "Показати ієрархію"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__sign
+msgid "Sign on Reports"
+msgstr "Увійдіть у звіти"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__6
+msgid "Smallest Text"
+msgstr "Найменший текст"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__sort_accounts_by
+msgid "Sort By"
+msgstr "Сортувати за"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#, python-format
+msgid "Sort by"
+msgstr "Сортувати за"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__date_from
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__date_from_cmp
+msgid "Start Date"
+msgstr "Дата початку"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Start Date :"
+msgstr "Дата початку :"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__date_from
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__date_from
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__date_from
+msgid "Start date"
+msgstr "Дата початку"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:0
+#, python-format
+msgid "Start date is mandatory!"
+msgstr "Дата початку обов'язкова!"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__strict_range
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__strict_range
+msgid "Strict Range"
+msgstr "Строгий діапазон"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ageing__partner_type__supplier
+msgid "Supplier Only"
+msgstr "Лише постачальник"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Suppliers Only"
+msgstr "Лише постачальники"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_financial_report__target_move
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_general_ledger__target_moves
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__target_moves
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_trial_balance__target_moves
+msgid "Target Moves"
+msgstr "Цільові рухи"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:0
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:0
+#, python-format
+msgid "Target moves"
+msgstr "Цільові рухи"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__this_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__this_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__this_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__this_month
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__this_month
+#, python-format
+msgid "This Month"
+msgstr "Цього місяця"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__this_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__this_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__this_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__this_quarter
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__this_quarter
+#, python-format
+msgid "This Quarter"
+msgstr "Цей квартал"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__this_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__this_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__this_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__this_week
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__this_week
+#, python-format
+msgid "This Week"
+msgstr "Цього тижня"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "This Year"
+msgstr "Цього року"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__this_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__this_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__this_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__this_financial_year
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__this_financial_year
+msgid "This financial Year"
+msgstr "Цей фінансовий рік"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_financial_report__label_filter
+msgid ""
+"This label will be displayed on report to show the balance computed for the "
+"given comparison filter."
+msgstr ""
+"Ця мітка відображатиметься у звіті, щоб показати баланс, обчислений для "
+"даний фільтр порівняння."
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__2
+msgid "Title 2 (bold)"
+msgstr "Назва 2 (жирний)"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__style_overwrite__3
+msgid "Title 3 (bold, smaller)"
+msgstr "Заголовок 3 (жирний, менший)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__today
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__today
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__today
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__today
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__today
+#, python-format
+msgid "Today"
+msgstr "Сьогодні"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:0
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#, python-format
+msgid "Total"
+msgstr "Всього"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_trial_balance_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_trial_balance
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_tb
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_tb_wiz
+#, python-format
+msgid "Trial Balance"
+msgstr "Пробний баланс"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_tb_report
+msgid "Trial Balance Report"
+msgstr "Звіт про пробний баланс"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_account_financial_report__type
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ageing__type
+msgid "Type"
+msgstr "Тип"
+
+#. module: account_dynamic_reports
+#: model:ins.account.financial.report,name:account_dynamic_reports.ins_account_financial_report_unallocated_earnings0
+msgid "Unallocated Earnings"
+msgstr "Нерозподілені прибутки"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Unfolded"
+msgstr "Розгорнуто"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "Unreconciled"
+msgstr "Непримирені"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__reconciled__unreconciled
+msgid "Unreconciled Only"
+msgstr "Непримирені Тільки"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_res_company__strict_range
+msgid "Use Strict Range"
+msgstr "Використовуйте строгий діапазон"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_res_company__strict_range
+msgid "Use this if you want to show TB with retained earnings section"
+msgstr "Використовуйте це, якщо ви хочете показати TB із розділом нерозподіленого прибутку"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "VIEW"
+msgstr "ПЕРЕГЛЯД"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__view_format__vertical
+msgid "Vertical"
+msgstr "Вертикальний"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_account_financial_report__type__sum
+msgid "View"
+msgstr "Переглянути"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "View General Ledger"
+msgstr "Переглянути Головну книгу"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "View Source move"
+msgstr "Перегляд вихідного коду"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "With Balance < Zero"
+msgstr "З балансом < нуля"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "With Balance > Zero"
+msgstr "З балансом > нуля"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "With Balance not Zero"
+msgstr "З балансом не нуль"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__balance_greater_than_zero
+msgid "With balance greater than zero"
+msgstr "З балансом більше нуля"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,field_description:account_dynamic_reports.field_ins_partner_ledger__balance_less_than_zero
+msgid "With balance less than zero"
+msgstr "З балансом менше нуля"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__display_accounts__balance_not_zero
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__display_accounts__balance_not_zero
+msgid "With balance not equal to zero"
+msgstr "З балансом не рівним нулю"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__display_accounts__balance_not_zero
+msgid "With balance not zero"
+msgstr "З балансом не нульовим"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "XLSX"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_financial_report__date_range__yesterday
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_general_ledger__date_range__yesterday
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_partner_ledger__date_range__yesterday
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__ins_trial_balance__date_range__yesterday
+#: model:ir.model.fields.selection,name:account_dynamic_reports.selection__res_company__date_range__yesterday
+#, python-format
+msgid "Yesterday"
+msgstr "Вчора"
+
+#. module: account_dynamic_reports
+#: model:ir.model.fields,help:account_dynamic_reports.field_ins_account_financial_report__style_overwrite
+msgid ""
+"You can set up here the format you want this record to be displayed. If you "
+"leave the automatic formatting, it will be computed based on the financial "
+"reports hierarchy (auto-computed field 'level')."
+msgstr ""
+"Тут можна встановити формат, у якому цей запис має відображатися. Якщо ви "
+"залиште автоматичне форматування, воно буде обчислено на основі фінансових"
+"ієрархія звітів (автоматично обчислене поле 'рівень')."
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_general_ledger
+msgid "ins.general.ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_partner_ageing
+msgid "ins.partner.ageing"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_partner_ledger
+msgid "ins.partner.ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_trial_balance
+msgid "ins.trial.balance"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_general_ledger
+msgid "report.account_dynamic_reports.general_ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_ins_financial_report_xlsx
+msgid "report.account_dynamic_reports.ins_financial_report_xlsx"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_ins_general_ledger_xlsx
+msgid "report.account_dynamic_reports.ins_general_ledger_xlsx"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_ins_partner_ageing_xlsx
+msgid "report.account_dynamic_reports.ins_partner_ageing_xlsx"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_partner_ageing
+msgid "report.account_dynamic_reports.partner_ageing"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_partner_ledger
+msgid "report.account_dynamic_reports.partner_ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_trial_balance
+msgid "report.account_dynamic_reports.trial_balance"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:0
+#, python-format
+msgid "to"
+msgstr "до"
